@@ -1,10 +1,10 @@
-.PHONY: up migrate run
+.PHONY: up migrate run down
 
 up:
 	@docker-compose -f build/docker-compose.yml up
 
-migrate:
-	@scripts/migrate.sh
+down:
+	@docker-compose -f build/docker-compose.yml down
 
 run:
-	@scripts/run.sh
+	@yarn start

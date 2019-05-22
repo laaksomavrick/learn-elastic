@@ -1,7 +1,6 @@
 # learn-elastic
 
-### Running the service
+## Preparing the service
 
 `make up`
-`make migrate`
 `make run`
