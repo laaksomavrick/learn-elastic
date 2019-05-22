@@ -2,13 +2,13 @@
 
 ```
 {
-	"query": {
-		"term": {
-			"likes": {
-				"value": 5
-			}
-		}
-	}
+  "query": {
+    "term": {
+      "likes": {
+        "value": 5
+      }
+    }
+  }
 }
 ```
 

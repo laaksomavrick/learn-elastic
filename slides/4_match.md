@@ -2,11 +2,11 @@
 
 ```
 {
-	"query": {
-		"match": {
-			"content": "back"
-		}
-	}
+  "query": {
+    "match": {
+      "content": "back"
+    }
+  }
 }
 ```
 

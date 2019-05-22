@@ -2,19 +2,19 @@
 
 ```
 {
-	"size": 50,
-	"sort": [
-		{
-			"created_at": "asc"
-		},
-		{
-			"_id": "desc"
-		}
-	],
-	"search_after": [
-		1527781710825,
-		"09511592-e876-4297-983b-cdc1cb079bb3"
-	]
+  "size": 50,
+  "sort": [
+    {
+      "created_at": "asc"
+    },
+    {
+      "_id": "desc"
+    }
+  ],
+  "search_after": [
+    1527781710825,
+    "09511592-e876-4297-983b-cdc1cb079bb3"
+  ]
 }
 ```
 

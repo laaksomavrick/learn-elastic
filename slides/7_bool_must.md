@@ -2,24 +2,24 @@
 
 ```
 {
-	"query": {
-		"bool": {
-			"must": [
-				{
-					"term": {
-						"likes": {
-							"value": 5
-						}
-					}
-				},
-				{
-					"match": {
-						"user.name": "Wyatt"
-					}
-				}
-			]
-		}
-	}
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "likes": {
+              "value": 5
+            }
+          }
+        },
+        {
+          "match": {
+            "user.name": "Wyatt"
+          }
+        }
+      ]
+    }
+  }
 }
 ```
 

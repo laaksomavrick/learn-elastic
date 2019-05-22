@@ -2,14 +2,14 @@
 
 ```
 {
-	"query": {
-		"query_string": {
-			"fields": [
-				"content"
-			],
-			"query": "bac*"
-		}
-	}
+  "query": {
+    "query_string": {
+      "fields": [
+        "content"
+      ],
+      "query": "bac*"
+    }
+  }
 }
 ```
 

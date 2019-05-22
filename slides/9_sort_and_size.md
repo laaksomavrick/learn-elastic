@@ -2,15 +2,15 @@
 
 ```
 {
-	"size": 50,
-	"sort": [
-		{
-			"created_at": "asc"
-		},
-		{
-			"_id": "desc"
-		}
-	]
+  "size": 50,
+  "sort": [
+    {
+      "created_at": "asc"
+    },
+    {
+      "_id": "desc"
+    }
+  ]
 }
 ```
 

@@ -2,24 +2,24 @@
 
 ```
 {
-	"query": {
-		"bool": {
-			"must": [
-				{
-					"match": {
-						"content": "back"
-					}
-				}
-			],
-			"should": [
-				{
-					"match": {
-						"replies": "pizza"
-					}
-				}
-			]
-		}
-	}
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "content": "back"
+          }
+        }
+      ],
+      "should": [
+        {
+          "match": {
+            "replies": "pizza"
+          }
+        }
+      ]
+    }
+  }
 }
 ```
 
