@@ -1,6 +1,7 @@
 # learn-elastic
 
-## Preparing the service
-
+`yarn`
 `make up`
 `make run`
+
+...and then import `insomnia-export.json` into insomnia.
