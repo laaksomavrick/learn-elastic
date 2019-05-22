@@ -1,0 +1,296 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-05-22T19:49:59.496Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"created": 1558531741705,
+			"description": "",
+			"modified": 1558531741705,
+			"name": "learn-elastic",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_6fc525c8f9a64ed88ae36eb6c12114ab",
+			"color": null,
+			"created": 1558531742434,
+			"data": {
+				"url": "http://localhost:9200"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1558531742434,
+			"modified": 1558538372967,
+			"name": "New Environment",
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_1f92806facdd4e9d8be4797020a8aae8",
+			"cookies": [],
+			"created": 1558531742439,
+			"modified": 1558531742439,
+			"name": "Default Jar",
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_fdeadf486bf246d0b8f8d1b623a1bdd4",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1558538335207,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7ea9da6a1d9a4a8584010c5d2ef5be13",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1558538335207,
+			"method": "GET",
+			"modified": 1558547203290,
+			"name": "3 - Get all",
+			"parameters": [],
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/twitter/_search?pretty=true",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9353b76a738240f5b03a82f8224d6808",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"query\": {\n\t\t\"match\": {\n\t\t\t\"content\": \"back\"\n\t\t}\n\t}\n}"
+			},
+			"created": 1558546538554,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7ea9da6a1d9a4a8584010c5d2ef5be13",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1557283081269,
+			"method": "GET",
+			"modified": 1558554218998,
+			"name": "4 - Basic search: match",
+			"parameters": [],
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/twitter/_search?pretty=true",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7062c21b7e5d4d31b302b0eea2a44c0d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"query\": {\n\t\t\"query_string\": {\n\t\t\t\"fields\": [\n\t\t\t\t\"content\"\n\t\t\t],\n\t\t\t\"query\": \"back*\"\n\t\t}\n\t}\n}"
+			},
+			"created": 1558546723139,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7ea9da6a1d9a4a8584010c5d2ef5be13",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1556655454300,
+			"method": "GET",
+			"modified": 1558554217012,
+			"name": "5 - Basic search: query_string",
+			"parameters": [],
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/twitter/_search?pretty=true",
+			"_type": "request"
+		},
+		{
+			"_id": "req_77e6f04c987740298db8a7218f4bed4a",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"query\": {\n\t\t\"term\": {\n\t\t\t\"likes\": {\n\t\t\t\t\"value\": 20814\n\t\t\t}\n\t\t}\n\t}\n}"
+			},
+			"created": 1558547227357,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7ea9da6a1d9a4a8584010c5d2ef5be13",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1556341640815.5,
+			"method": "GET",
+			"modified": 1558554214700,
+			"name": "6 - Basic search: term",
+			"parameters": [],
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/twitter/_search?pretty=true",
+			"_type": "request"
+		},
+		{
+			"_id": "req_239ac81ea49c4a9da95fff6e44df15e2",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"query\": {\n\t\t\"bool\": {\n\t\t\t\"must\": [\n\t\t\t\t{\n\t\t\t\t\t\"term\": {\n\t\t\t\t\t\t\"likes\": {\n\t\t\t\t\t\t\t\"value\": 20814\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"match\": {\n\t\t\t\t\t\t\"user.name\": \"Wyatt\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t}\n}"
+			},
+			"created": 1558553796541,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7ea9da6a1d9a4a8584010c5d2ef5be13",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1556184734073.25,
+			"method": "GET",
+			"modified": 1558554467178,
+			"name": "7 - Compound: must",
+			"parameters": [],
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/twitter/_search?pretty=true",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1ab3f167cbc5475986d79ccb2dc2c0d5",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"query\": {\n\t\t\"bool\": {\n\t\t\t\"must\": [\n\t\t\t\t{\n\t\t\t\t\t\"match\": {\n\t\t\t\t\t\t\"content\": \"back\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"should\": [\n\t\t\t\t{\n\t\t\t\t\t\"match\": {\n\t\t\t\t\t\t\"replies\": \"pizza\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t}\n}"
+			},
+			"created": 1558554058063,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7ea9da6a1d9a4a8584010c5d2ef5be13",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1556106280702.125,
+			"method": "GET",
+			"modified": 1558554471465,
+			"name": "8 - Compound: should",
+			"parameters": [],
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/twitter/_search?pretty=true",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d59501549e1640e18cfd42a786d6a033",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"size\": 50,\n\t\"sort\": [\n\t\t{\n\t\t\t\"created_at\": \"asc\"\n\t\t},\n\t\t{\n\t\t\t\"_id\": \"desc\"\n\t\t}\n\t]\n}"
+			},
+			"created": 1558554243662,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7ea9da6a1d9a4a8584010c5d2ef5be13",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1556067054016.5625,
+			"method": "GET",
+			"modified": 1558554477133,
+			"name": "9 - Sort and size",
+			"parameters": [],
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/twitter/_search?pretty=true",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1da2b03fb84042a18d8d9603d6f5c5a8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"size\": 50,\n\t\"sort\": [\n\t\t{\n\t\t\t\"created_at\": \"asc\"\n\t\t},\n\t\t{\n\t\t\t\"_id\": \"desc\"\n\t\t}\n\t],\n\t\"search_after\": [\n\t\t1527781710825,\n\t\t\"09511592-e876-4297-983b-cdc1cb079bb3\"\n\t]\n}"
+			},
+			"created": 1558554347781,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7ea9da6a1d9a4a8584010c5d2ef5be13",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1556047440673.7812,
+			"method": "GET",
+			"modified": 1558554480987,
+			"name": "10 - Search after (paging)",
+			"parameters": [],
+			"parentId": "wrk_26a5f5408a7b4e9081e1f22ed5ad4105",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/twitter/_search?pretty=true",
+			"_type": "request"
+		}
+	]
+}
